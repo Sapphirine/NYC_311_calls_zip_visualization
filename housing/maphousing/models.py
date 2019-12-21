@@ -1,3 +1,6 @@
+# Author: Dwiref
+# Updated: 12/20/2019
+
 from django.db import models
 
 # Create your models here.
