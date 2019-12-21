@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+      
+      
+    <title>formDemo.html</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset = "UTF-8" />
+  </head>
+    <div class="container">
+      <body>
+        <h1>Form Demo</h1>
+        {% csrf_token %}
+        <form method="POST" action="map/">
+           <fieldset>
+              <legend>Selecting elements</legend>
+              <p>
+                 <label>Criteria 1</label>
+                 <select id = "myList" name="list1">
+                    <option value = "0">Traffic Signal Condition</option>
+                    <option value = "1">Street Light Condition</option>
+                    <option value = "2">Street Condition</option>
+                    <option value = "3">Building/Use</option>
+                    <option value = "4">General Construction/Plumbing</option>
+                    <option value = "5">HEAT/HOT WATER</option>
+                    <option value = "6">Abandoned Vehicle</option>
+                    <option value = "7">Street Sign - Missing</option>
+                    <option value = "8">Illegal Parking</option>
+                    <option value = "9">UNSANITARY CONDITION</option>
+                    <option value = "10">Blocked Driveway</option>
+                    <option value = "11">Derelict Vehicles</option>
+                    <option value = "12">Dirty Conditions</option>
+                    <option value = "13">Broken Parking Meter</option>
+                    <option value = "14">Water System</option>
+                    <option value = "15">Noise</option>
+                    <option value = "16">Indoor Air Quality</option>
+                    <option value = "17">Traffic</option>
+                    <option value = "18">Sewer</option>
+                    <option value = "19">Construction Lead Dust</option>
+                    <option value = "20">Vending</option>
+                    <option value = "21">Noise - Residential</option>
+                    <option value = "22">PLUMBING</option>
+                    <option value = "23">Curb Condition</option>
+                    <option value = "24">FLOORING/STAIRS</option>
+                    <option value = "25">Noise - Park</option>
+                    <option value = "26">Elevator</option>
+                    <option value = "27">Indoor Sewage</option>
+                    <option value = "28">Rodent</option>
+                    <option value = "29">Homeless Person Assistance</option>
+                    <option value = "30">Sidewalk Condition</option>
+                    <option value = "31">GENERAL</option>
+                    <option value = "32">PAINT/PLASTER</option>
+                    <option value = "33">Homeless Encampment</option>
+                    <option value = "34">Damaged Tree</option>
+                    <option value = "35">Noise - Street/Sidewalk</option>
+                    <option value = "36">Hazardous Materials</option>
+                    <option value = "37">Maintenance or Facility</option>
+                    <option value = "38">Noise - Helicopter</option>
+                    <option value = "39">Food Establishment</option>
+                    <option value = "40">For Hire Vehicle Complaint</option>
+                    <option value = "41">Taxi Report</option>
+                    <option value = "42">Electrical</option>
+                    <option value = "43">WATER LEAK</option>
+                    <option value = "44">Water Quality</option>
+                    <option value = "45">ELECTRIC</option>
+                    <option value = "46">Missed Collection (All Materials)</option>
+                    <option value = "47">Emergency Response Team (ERT)</option>
+                    <option value = "48">Consumer Complaint</option>
+                    <option value = "49">Animal-Abuse</option>
+                    <option value = "50">Taxi Complaint</option>
+                    <option value = "51">Non-Emergency Police Matter</option>
+                    <option value = "52">Panhandling</option>
+                    <option value = "53">Overgrown Tree/Branches</option>
+                    <option value = "54">DOOR/WINDOW</option>
+                    <option value = "55">Boilers</option>
+                    <option value = "56">Noise - Vehicle</option>
+                    <option value = "57">Mobile Food Vendor</option>
+                    <option value = "58">ELEVATOR</option>
+                    <option value = "59">Lost Property</option>
+                    <option value = "60">Lead</option>
+                    <option value = "61">Animal Facility - No Permit</option>
+                    <option value = "62">Noise - Commercial</option>
+                    <option value = "63">Pet Shop</option>
+                    <option value = "64">Asbestos</option>
+                    <option value = "65">Air Quality</option>
+                    <option value = "66">Non-Residential Heat</option>
+                    <option value = "67">Illegal Tree Damage</option>
+                    <option value = "68">Other Enforcement</option>
+                    <option value = "69">Special Projects Inspection Team (SPIT)</option>
+                    <option value = "70">New Tree Request</option>
+                    <option value = "71">Green Taxi Complaint</option>
+                    <option value = "72">Drinking</option>
+                    <option value = "73">Street Sign - Damaged</option>
+                    <option value = "74">Street Sign - Dangling</option>
+                    <option value = "75">APPLIANCE</option>
+                    <option value = "76">Smoking</option>
+                    <option value = "77">Drug Activity</option>
+                    <option value = "78">Plumbing</option>
+                    <option value = "79">SAFETY</option>
+                    <option value = "80">Root/Sewer/Sidewalk Condition</option>
+                    <option value = "81">Unsanitary Pigeon Condition</option>
+                    <option value = "82">Graffiti</option>
+                    <option value = "83">Bus Stop Shelter Complaint</option>
+                    <option value = "84">Food Poisoning</option>
+                    <option value = "85">Day Care</option>
+                    <option value = "86">Bus Stop Shelter Placement</option>
+                    <option value = "87">Animal in a Park</option>
+                    <option value = "88">Dead/Dying Tree</option>
+                    <option value = "89">Sanitation Condition</option>
+                    <option value = "90">Derelict Bicycle</option>
+                    <option value = "91">Violation of Park Rules</option>
+                    <option value = "92">Highway Condition</option>
+                    <option value = "93">Unsanitary Animal Pvt Property</option>
+                    <option value = "94">Overflowing Litter Baskets</option>
+                    <option value = "95">School Maintenance</option>
+                    <option value = "96">For Hire Vehicle Report</option>
+                    <option value = "97">Public Payphone Complaint</option>
+                    <option value = "98">Water Conservation</option>
+                    <option value = "99">Recycling Enforcement</option>
+                    <option value = "100">OUTSIDE BUILDING</option>
+                    <option value = "101">Harboring Bees/Wasps</option>
+                    <option value = "102">Unleashed Dog</option>
+                    <option value = "103">Cranes and Derricks</option>
+                    <option value = "104">Bike Rack Condition</option>
+                    <option value = "105">Bike/Roller/Skate Chronic</option>
+                    <option value = "106">Industrial Waste</option>
+                    <option value = "107">Municipal Parking Facility</option>
+                    <option value = "108">Urinating in Public</option>
+                    <option value = "109">Highway Sign - Damaged</option>
+                    <option value = "110">Snow</option>
+                    <option value = "111">Executive Inspections</option>
+                    <option value = "112">Beach/Pool/Sauna Complaint</option>
+                    <option value = "113">Mold</option>
+                    <option value = "114">Noise - House of Worship</option>
+                    <option value = "115">Drinking Water</option>
+                    <option value = "116">Special Natural Area District (SNAD)</option>
+                    <option value = "117">BEST/Site Safety</option>
+                    <option value = "118">Scaffold Safety</option>
+                    <option value = "119">Green Taxi Report</option>
+                    <option value = "120">Found Property</option>
+                    <option value = "121">Investigations and Discipline (IAD)</option>
+                    <option value = "122">Snow Removal</option>
+                    <option value = "123">Illegal Animal Sold</option>
+                    <option value = "124">Radioactive Material</option>
+                    <option value = "125">Plant</option>
+                    <option value = "126">Taxi Compliment</option>
+                    <option value = "127">DEP Street Condition</option>
+                    <option value = "128">Illegal Fireworks</option>
+                    <option value = "129">Posting Advertisement</option>
+                    <option value = "130">Illegal Animal Kept as Pet</option>
+                    <option value = "131">Mosquitoes</option>
+                    <option value = "132">LinkNYC</option>
+                    <option value = "133">Tattooing</option>
+                    <option value = "134">FHV Licensee Complaint</option>
+                 </select>
+              </p>
+              <p>
+                 <label>Importance (5 is highest) </label>
+                 <select id = "myList">
+                   <option value = "1">1</option>
+                   <option value = "2">2</option>
+                   <option value = "3">3</option>
+                   <option value = "4">4</option>
+                   <option value = "5">5</option>
+                 </select>
+              </p>
+           </fieldset>
+        <button type=”submit”>Send</button>
+        </form>
+      </body>
+    </div>
+</html>
