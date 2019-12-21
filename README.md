@@ -4,6 +4,9 @@ Authors: Dwiref Oza (dso2119) and Peter L. Malinverni (plm2130)
 
 This repository contains Django-webapps for the final project of the course EECS E6893: Big Data Analytics, taught by Dr. Ching-Yung Lin at Columbia University. 
 
+Primary demo: firstdraft/map
+secondary (buggy): housing/maphousing
+
 ## Dependencies
 
 You will require the following python packages:
