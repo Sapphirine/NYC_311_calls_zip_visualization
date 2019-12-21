@@ -24,5 +24,9 @@ python3 manage.py runserver
 
 Navigate to 127.0.0.1/<webapp_name>
 
+## Report and Video details
+
+The report is included in this repository. A [video presentation](https://www.youtube.com/watch?v=iDtddzSW2Mk&t=1s) of the project exists. 
+
 
 
