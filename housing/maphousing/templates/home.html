@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Zip Visualization Demo</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <div class="p-3 mb-2 bg-info text-white">
+    <div class="container">
+  <body>
+    <h1>NYC ZIP Code Visualization for Potential Housing</h1>
+    <h2>There are 6 criteria to choose from. Enter your top 3 criteria in the text boxes below:</h2>
+    <h2>Your options are: 'Noise', 'Water System', 'Rodent', 'Hazardous Material', 'Electrical' and 'Asbestos'.</h2>
+    <form id="form" action="result.html"  method = "post">
+      <fieldset>    <h2>Housing Criteria</h2>
+         <legend>Selecting elements</legend>
+       <p>
+         <label for = "Criteria_1"> Enter primary criteria: </label>
+         <input id = "Criteria_1" type = "text" name = "crit_field_1">
+       </p>
+       <p>
+         <label for = "Criteria_2"> Enter secondary criteria: </label>
+         <input id = "Criteria_2" type = "text" name = "crit_field_2">
+       </p>
+       <p>
+         <label for = "Criteria_3"> Enter tertiary criteria: </label>
+         <input id = "Criteria_3" type = "text" name = "crit_field_3">
+       </p>
+      </fieldset>
+      <input type="submit" value="Submit">
+      </form>
+    </body>
+  </html>
