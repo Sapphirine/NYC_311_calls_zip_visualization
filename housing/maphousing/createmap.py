@@ -1,3 +1,6 @@
+# Authors: Peter Malinverni and Dwiref Oza
+# Updated: 12/20/2019
+
 from sodapy import Socrata
 import os
 import folium
